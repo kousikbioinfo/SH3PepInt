@@ -1,8 +1,7 @@
 SH3PepInt
 ===
 
-SH3PepInt is a prediction tool for SH3-peptide interactions, based on Graph Kernel using SVM. 
-Current version contains a total 70 human SH3 domain models. 
+SH3PepInt is an alignment-free, fast and sophisticated graph kernel based tool to predict SH3-peptide interactions. Total 69 built-in models are available for SH3-peptide predictions. It does not need any pre-alignment of the peptides. It computes a window analysis on the query proteins and considers 15 amino acids length peptides. User can change the step size for the window analysis. Depending on the user requirement it uses Gene Ontology database for getting more reliable interactions.
 
 SH3PepInt 1.0, January, 2013 
 
