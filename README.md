@@ -18,9 +18,9 @@ Installation:
 
 To install the tool, please extract the src archive somewhere. Then change
 into that directory and type
-
+```
 bash COMPILE.sh
-
+```
 the script compiles the svmsgdnspdk and  
 creates the master script, namely SH3PepInt.sh. 
 
@@ -36,11 +36,11 @@ In order to compile SH3PepInt correctly, you need "PERL" already installed.
 
 Usage:
 --------------
-
+```
 SH3PepInt <protein/peptide fasta file> <model file>
 
 e.g. SH3PepInt sample.fasta models/SRC-84-145.model
-
+```
 The model file is OPTIONAL, by default the program uses all the 70 models for the predictions. 
 
 
