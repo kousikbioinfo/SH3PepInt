@@ -1,4 +1,5 @@
-======================SH3PepInt===============================================
+SH3PepInt
+===
 
 
 SH3PepInt is a prediction tool for SH3-peptide interactions, based on Graph Kernel using SVM. 
@@ -21,7 +22,7 @@ A current version of SH2PepInt you can get from:
 
 http://www.bioinf.uni-freiburg.de/Software/SH3PepInt
  
-or please write an email to Kousik Kundu <kousik@informatik.uni-freiburg.de>
+or please write an email to Kousik Kundu <kousik@sanger.ac.uk>
 
 To install the tool, please extract the src archive somewhere. Then change
 into that directory and type
