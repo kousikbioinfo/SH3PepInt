@@ -51,12 +51,17 @@ sample.fasta: sample file for run the tool.
 peptides.fasta: sample peptide file with 15 amino acids length.
 
 
+Webserver:
+-----------------
+http://modpepint.informatik.uni-freiburg.de/SH3PepInt/Input.jsp
+
+
 Contact:
 -----------------
 Kousik Kundu (kk8@sanger.ac.uk)
 
 
-Publication:
+Citation:
 -----------------
 * Kousik Kundu, Martin Mann, Fabrizio Costa, and Rolf Backofen.
 [MoDPepInt: An interactive webserver for prediction of modular domain-peptide interactions
