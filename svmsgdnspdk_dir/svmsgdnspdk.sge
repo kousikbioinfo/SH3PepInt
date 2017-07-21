@@ -1,0 +1,10 @@
+#!/bin/bash -l
+#$ -cwd
+#$ -o /home/kousik/svmsgdnspdk_dir/$JOB_ID.out
+#$ -e /home/kousik/svmsgdnspdk_dir/$JOB_ID.err
+#$ -l h_vmem=10G
+
+
+export PATH=$PATH:/home/kousik/svmsgdnspdk_dir
+
+svmsgdnspdk -a TRAIN -d train.gspan -t train_target.txt -m train_dir_2_3.model -gt DIRECTED -ll 1 2 3 $*

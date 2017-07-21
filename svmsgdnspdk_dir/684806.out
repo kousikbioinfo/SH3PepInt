@@ -1,0 +1,48 @@
+--------------------------------------------------------------
+SVMSGDNSPDK Vers. 7.0 (4 Jan 2012)
+Author: Fabrizio Costa costa@informatik.uni-freiburg.de
+--------------------------------------------------------------
+Reading target file: train_target.txt .... read: 16293 targets.
+Loading file:train.gspan
+..........1K..........2K..........3K..........4K..........5K..........6K..........7K..........8K..........9K..........10K..........11K..........12K..........13K..........14K..........15K..........16K..
+Counted 16293 times.
+Elapsed time: h: 0 m: 0 s: 54
+
+--------------------------------------------------------------
+Train phase
+--------------------------------------------------------------
+
+Training on 16293 (100%) at level 1/1
+Class distribution: 16293 (+:12024 -:4269) [+:0.737986 -:0.262014]
+Oversampling negative factor: 2.81658
+Rebalanced dataset: 24048 (+:12024 -:12024)
+Training for 10 epochs.
+..........
+Counted 10 times.
+Elapsed time: h: 0 m: 0 s: 33
+--------------------------------------------------------------
+Model information
+--------------------------------------------------------------
+Bit size:14
+Instance Parts Threshold:1
+Radius:3 Distance:5
+W Norm:32.6872
+Bias:0.206224
+Positive threshold:0
+Negative threshold:0
+--------------------------------------------------------------
+Performance on train set:
+    Size: 16293
+    Predicted: 16293 ( 100 %) Abstained: 0 ( 0 %)
+    Correct: 16280 ( 99.9202 %)
+    Error: 13 ( 0.0797889 %)
+    Confusion table:
+    TP:12011 FP:0
+    FN:13 TN:4269
+    +Precision:1 +Recall:0.998919 +F-measure:0.999459
+    -Precision:0.996964 -Recall:1 -F-measure:0.99848
+    Balanced F-measure:0.998969
+
+Saving model to file: train.model
+
+Train phase completed:Elapsed time: h: 0 m: 24 s: 1457

@@ -1,0 +1,16 @@
+#for standard train-test cycle
+ ./svmsgdnspdk -a TRAIN -d bursi.gspan -t bursi.target -m bursi.model -ll 1 1 4
+./svmsgdnspdk -a TEST -d bursi.test.gspan -m bursi.model
+paste bursi.test.target output.predictions | awk '{print $1,$3}' | ./perf -ROC
+
+#cv
+./svmsgdnspdk -a CROSSVALIDATION -d bursi.gspan -t bursi.target -ll 1 1 4 -cv 5
+ cat output.cv_predictions | awk '{print $2,$4}' | ./perf -ROC
+
+#semi-supervised
+./svmsgdnspdk -a TRAIN -d bursi.train.ssup.gspan -t bursi.train.ssup.target -ll 1 1 3 -ssi 10
+
+
+#for learning curve
+\rm dat; for i in $(seq 1 10); do ./svmsgdnspdk -a LEARNINGCURVE -d bursi.gspan -t bursi.target -ll 1 1 4 -lc 10 -rs $i | tee log ; cat log | grep -e "Balanced" | tr ':' ' ' | awk '{print $(NF)}' | awk 'NR%2==1{printf("%s %s ",(NR+1)/2,$1)}NR%2==0' >> dat; done
+plot [0:10] 'dat' u 1:2 t "" w p lt 1, '' u 1:3 t "" w p lt 2, '' u 1:2:(1) t "Training F-measure" smooth acspline w l lt 1 lw 3, '' u 1:3:(1) t "Test F-measure" smooth acspline w l lt 2 lw 3

@@ -1,0 +1,21 @@
+--------------------------------------------------------------------------------
+Name: NeighborhoodSubgraphPaiwiseDistanceKernel
+Version: 8.1
+Programmer: Fabrizio Costa
+Last update: 6 Dec 2011
+Start logging: Thu Feb  2 19:06:53 2012
+
+Command line: NSPDK -of -R 3 -D 5 -gt DIRECTED -b8 -fg bursi.gspan 
+St9exception
+End logging: Thu Feb  2 19:06:53 2012
+
+--------------------------------------------------------------------------------
+Name: NeighborhoodSubgraphPaiwiseDistanceKernel
+Version: 8.1
+Programmer: Fabrizio Costa
+Last update: 6 Dec 2011
+Start logging: Thu Feb  2 19:06:58 2012
+
+Command line: NSPDK -of -R 3 -D 5 -gt DIRECTED -b 8 -fg bursi.gspan 
+End logging: Thu Feb  2 19:07:42 2012
+
