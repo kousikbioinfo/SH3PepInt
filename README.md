@@ -22,7 +22,7 @@ into that directory and type
 bash COMPILE.sh
 ```
 the script compiles the svmsgdnspdk and  
-creates the master script, namely SH3PepInt.sh. 
+creates the master script, namely SH3PepInt.sh.
 
 
 
