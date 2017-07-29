@@ -22,7 +22,6 @@ cd svmsgdnspdk_dir;
 make;
 cd ..;
 
-
 #########################################
 echo " compilation and installation finished!";
 #########################################
