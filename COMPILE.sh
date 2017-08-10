@@ -29,7 +29,3 @@ echo " compilation and installation finished!";
 echo
 echo " You can run now ./SH3PepInt.sh sample.fasta models/SRC-84-145.model";
 echo
-
-
-
-
